@@ -5,21 +5,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="app.component.css">
+
   <title>Document</title>
 </head>
 <body>
-  <nav>
-    <a routerLink="/home">Home</a>
-    <a routerLink="/contact">Contacto</a>
-    <a routerLink="/venta">Venta</a>
-    <a routerLink="/registro">Registro Producto</a>
-    <a routerLink="/lista-venta">Listado Venta</a>
-    <a routerLink="/product">Listado Producto</a>
-    <a routerLink="/login">Login</a>
-
-    
-    
-  </nav>
-  <router-outlet></router-outlet>  
+  
+  <app-header *ngIf="mostrarNavBar mostrarLoginOption" ></app-header>
+  <router-outlet ></router-outlet>  
 </body>
 </html>

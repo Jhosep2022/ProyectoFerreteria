@@ -1,1 +1,54 @@
-<p>home-page works!</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="home-page.component.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"> 
+  <!-- Importar archivo de estilos CSS -->
+  <title>Home - Ferretería Angel</title>
+</head>
+<body>
+  <!-- Showcase -->
+  <header class="showcase">
+    <h2>Surface Deals</h2>
+    <p>
+      Select Surfaces are on sale now - save while supplies last
+    </p>
+    <a routerLink="/product" class="btn">
+      Ver Productos <i class="fas fa-chevron-right"></i>
+    </a>
+  </header>
+
+
+  <!-- Tarjetas de productos -->
+  <div class="container">
+    <div class="card-deck">
+      <div class="card">
+        <img src="/assets/ferre1.png" class="card-img card-img-top" alt="Product 1">
+        <div class="card-body">
+          <h5 class="card-title">Product 1</h5>
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse aliquet gravida tincidunt.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="/assets/ferre2.png" class="card-img card-img-top" alt="Product 2">
+        <div class="card-body">
+          <h5 class="card-title">Product 2</h5>
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse aliquet gravida tincidunt.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="/assets/ferre3.png" class="card-img card-img-top" alt="Product 3">
+        <div class="card-body">
+          <h5 class="card-title">Product 3</h5>
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse aliquet gravida tincidunt.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,73 @@
+/* Estilos para el carrusel */
+.carousel-item img {
+  height: 400px;
+  object-fit: cover;
+}
+
+/* Estilos para las tarjetas de productos */
+.card-deck {
+  margin-top: 40px;
+}
+
+.card {
+  border: none;
+}
+
+.card-img {
+  height: 200px; /* Ajusta la altura deseada */
+  object-fit: cover; /* Para ajustar la imagen y evitar distorsiones */
+}
+
+/* Showcase */
+.showcase {
+  width: 100%;
+  height: 500px;
+  background: url(/assets/ferre1.png) no-repeat center center/cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: flex-end;
+  padding-bottom: 50px;
+  margin-bottom: 20px;
+}
+
+.showcase h2 {
+  margin-bottom: 10px;
+  color: #f4eeee;
+  font-size: 45px;
+  font-family: 'Indie Flower', cursive;
+  font-weight: bold;
+}
+
+.showcase p{
+  margin-bottom: 10px;
+  color: #f4eeee;
+  font-size: 20px;
+  font-family: 'Indie Flower', cursive;
+  font-weight: bold;
+}
+
+.showcase .btn {
+  margin-top: 20px;
+  color: #f4eeee;
+  background-color: #f4a261;
+  border-color: #f4a261;
+
+}
+
+/* Estilos para los detalles adicionales */
+.additional-details {
+  background-color: #f8f9fa;
+  text-align: center;
+  padding: 40px;
+}
+
+.additional-details h2 {
+  font-family: 'Indie Flower', cursive;
+  font-size: 32px;
+}
+
+.additional-details p {
+  margin-top: 20px;
+}

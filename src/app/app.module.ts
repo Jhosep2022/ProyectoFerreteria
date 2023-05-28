@@ -14,6 +14,7 @@ import { ProductoAgregarPageComponent } from './producto-agregar-page/producto-a
 import { ClienteAgregarPageComponent } from './cliente-agregar-page/cliente-agregar-page.component';
 import { ClientePageComponent } from './cliente-page/cliente-page.component';
 import { VentaAgregarPageComponent } from './venta-agregar-page/venta-agregar-page.component';
+import { PedidosComponent } from './pedidos/pedidos.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { VentaAgregarPageComponent } from './venta-agregar-page/venta-agregar-pa
     ProductoAgregarPageComponent,
     ClienteAgregarPageComponent,
     ClientePageComponent,
-    VentaAgregarPageComponent
+    VentaAgregarPageComponent,
+    PedidosComponent
   ],
   imports: [
     BrowserModule,

@@ -8,12 +8,14 @@ import { Router } from '@angular/router';
 })
 export class HeaderComponent implements OnInit {
   mostrarLoginOption: boolean = true;
+  mostrarServiciosOption: boolean = false;
 
   constructor(private router: Router) {}
 
   ngOnInit() {
     if (this.router.url === '/home') {
       this.mostrarLoginOption = false;
+      this.mostrarServiciosOption = true;
     }
   }
 }

@@ -1,53 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="cliente-agregar-page.component.css">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="cliente-agregar-page.component.css">
+  <title>Document</title>
 </head>
+
 <body>
-    <section class="contact_wrapper">
-      
-        <div class="contact_msg">
-          <h3 class="title">
-            Agregar Cliente
-          </h3>
-      
-          <div class="form_fild">
-            <div class="input_group w_50">
-              <input type="text" class="input" required />
-              <label class="">Nombre</label>
-            </div>
-      
-            <div class="input_group w_50">
-              <input type="text" class="input" required />
-              <label class="">Numero Telefonico</label>
-            </div>
-      
-            <div class="input_group w_50">
-              <input type="text" class="input" required />
-              <label class="">Direccion</label>
-            </div>
-      
-      
-            <div class="input_group">
-                <a class="btn">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                  Agregar Cliente
-                </a>
-            </div>
-              
-      
-          </div>
-      
+  <section class="contact_wrapper">
+
+    <div class="contact_msg">
+      <h3 class="title">
+        Agregar Cliente
+      </h3>
+      <div class="form_fild">
+        <div class="input_group w_50">
+          <input type="text" class="input" [(ngModel)]="nombre" required />
+          <label class="">Nombre</label>
         </div>
       
-      </section> 
+        <div class="input_group w_50">
+          <input type="text" class="input" [(ngModel)]="telefono" required />
+          <label class="">Numero Telefonico</label>
+        </div>
+      
+        <div class="input_group w_50">
+          <input type="text" class="input" [(ngModel)]="direccion" required />
+          <label class="">Direccion</label>
+        </div>
+      
+        <div class="input_group">
+          <a class="btn" (click)="agregarCliente()">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Agregar Cliente
+          </a>
+          
+        </div>
+      </div>
+    </div>
+  </section>
 </body>
+
 </html>

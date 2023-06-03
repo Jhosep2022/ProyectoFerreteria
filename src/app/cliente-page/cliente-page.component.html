@@ -9,132 +9,57 @@
 </head>
 
 <body>
+  
   <div class="content">
+    
     <div class="container-fluid">
-
-        <div class="row">
-            <div class="col-lg-12">
-              <div class="card card-chart">
-                <div class="card-header card-header-success">
-                  <div class="ct-chart" id="dailySalesChart"></div>
-                </div>
-    
-                <div class="card-body">
-                  <div class="row">
-                    <div class="col-auto">
-                      <h3 class="card-title">Cliente 1</h3>
-                      <p class="card-category"><span class="text-success"><i class="fa fa-long-arrow-up"></i> Cliente
-                        </span> Andres Gonzales Poma</p>
-                        <p class="card-category"><span class="text-success"><i class="fa fa-long-arrow-up"></i> Numero
-                        </span> 891716115</p>
-                        <p class="card-category"><span class="text-success"><i class="fa fa-long-arrow-up"></i> Direccion
-                        </span> AV. Lorem, ipsum dolor sit </p>
-                          
-                    </div>
-                    <div class="col text-right">
-                      <button type="button" rel="tooltip" title="Edit Task" class="btn btn-success btn-link btn-sm">
-                        <i class="material-icons">edit</i>
-                      </button>
-                      <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-link btn-sm">
-                        <i class="material-icons">delete</i>
-                      </button>
-                    </div>
-                  </div>
-    
-                </div>
-    
-                <div class="card-footer">
-                  <div class="stats">
-                    <i class="material-icons"></i> updated 4 minutes ago
-                  </div>
-                </div>
-    
-              </div>
-            </div>
-          </div>
-      <div class="row">
-        <div class="col-lg-12">
+      <button class="btn-agregar" [routerLink]="['/cliente-agregar']">Agregar</button>
+    <div class="row">
+        <div class="col-lg-12" *ngFor="let cliente of clientes; let i = index">
           <div class="card card-chart">
-            <div class="card-header card-header-danger">
+            <div class="card-header card-header-success">
               <div class="ct-chart" id="dailySalesChart"></div>
             </div>
-
+  
             <div class="card-body">
               <div class="row">
                 <div class="col-auto">
-                  <h3 class="card-title">Cliente 1</h3>
-                  <p class="card-category"><span class="text-success"><i class="fa fa-long-arrow-up"></i> Cliente
-                    </span> Andres Gonzales Poma</p>
-                    <p class="card-category"><span class="text-success"><i class="fa fa-long-arrow-up"></i> Numero
-                    </span> 891716115</p>
-                    <p class="card-category"><span class="text-success"><i class="fa fa-long-arrow-up"></i> Direccion
-                    </span> AV. Lorem, ipsum dolor sit </p>
-                      
+                  <h3 class="card-title">Cliente {{ i + 1 }}</h3>
+                  <p class="card-category">
+                    <span class="text-success"><i class="fa fa-long-arrow-up"></i> Cliente</span>
+                    {{ cliente.nombre }}
+                  </p>
+                  <p class="card-category">
+                    <span class="text-success"><i class="fa fa-long-arrow-up"></i> Numero</span>
+                    {{ cliente.telefono }}
+                  </p>
+                  <p class="card-category">
+                    <span class="text-success"><i class="fa fa-long-arrow-up"></i> Direccion</span>
+                    {{ cliente.direccion }}
+                  </p>
                 </div>
                 <div class="col text-right">
                   <button type="button" rel="tooltip" title="Edit Task" class="btn btn-success btn-link btn-sm">
                     <i class="material-icons">edit</i>
                   </button>
-                  <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-link btn-sm">
-                    <i class="material-icons">delete</i>
-                  </button>
+                  <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-link btn-sm"
+                  (click)="eliminarCliente(cliente)">
+                  <i class="material-icons">delete</i>
+                </button>
                 </div>
               </div>
-
             </div>
-
+  
             <div class="card-footer">
               <div class="stats">
                 <i class="material-icons"></i> updated 4 minutes ago
               </div>
             </div>
-
           </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="card card-chart">
-            <div class="card-header card-header-warning">
-              <div class="ct-chart" id="dailySalesChart"></div>
-            </div>
-
-            <div class="card-body">
-              <div class="row">
-                <div class="col-auto">
-                  <h3 class="card-title">Cliente 1</h3>
-                  <p class="card-category"><span class="text-success"><i class="fa fa-long-arrow-up"></i> Cliente
-                    </span> Andres Gonzales Poma</p>
-                    <p class="card-category"><span class="text-success"><i class="fa fa-long-arrow-up"></i> Numero
-                    </span> 891716115</p>
-                    <p class="card-category"><span class="text-success"><i class="fa fa-long-arrow-up"></i> Direccion
-                    </span> AV. Lorem, ipsum dolor sit </p>
-                      
-                </div>
-                <div class="col text-right">
-                  <button type="button" rel="tooltip" title="Edit Task" class="btn btn-success btn-link btn-sm">
-                    <i class="material-icons">edit</i>
-                  </button>
-                  <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-link btn-sm">
-                    <i class="material-icons">delete</i>
-                  </button>
-                </div>
-              </div>
-
-            </div>
-
-            <div class="card-footer">
-              <div class="stats">
-                <i class="material-icons"></i> updated 4 minutes ago
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </div>
-
     </div>
-  </div>
+  </div>  
 </body>
 
 </html>

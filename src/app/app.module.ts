@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import {MatIconModule} from '@angular/material/icon';
+import { MatIconModule } from '@angular/material/icon';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -15,6 +15,7 @@ import { ClienteAgregarPageComponent } from './cliente-agregar-page/cliente-agre
 import { ClientePageComponent } from './cliente-page/cliente-page.component';
 import { VentaAgregarPageComponent } from './venta-agregar-page/venta-agregar-page.component';
 import { PedidosComponent } from './pedidos/pedidos.component';
+import { FormsModule } from '@angular/forms'; // Importa FormsModule
 
 @NgModule({
   declarations: [
@@ -36,6 +37,7 @@ import { PedidosComponent } from './pedidos/pedidos.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     MatIconModule,
+    FormsModule // Agrega FormsModule aquí
   ],
   providers: [],
   bootstrap: [AppComponent]

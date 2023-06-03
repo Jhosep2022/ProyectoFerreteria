@@ -52,6 +52,7 @@
     color: #212529;
     text-align: left;
     background-color: #fafafa;
+    
   }
   
   [tabindex="-1"]:focus {
@@ -16826,4 +16827,25 @@
     .sidebar .navbar-form {
       display: none !important;
     }
+  }
+
+  /*button */
+
+  /* Estilos para el efecto de los span */
+  .btn-agregar {
+    position: relative;
+    display: inline-block;
+    
+    padding-top: 50px; 
+    color: rgb(142, 139, 193);
+    background-color: transparent;
+    border: 2px solid rgb(142, 139, 193);
+    font-weight: bold;
+    border-radius: 20px;
+    font-size: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    letter-spacing: 4px;
   }

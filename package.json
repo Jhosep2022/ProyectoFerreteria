@@ -4,10 +4,12 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
+    "start:server": "node server.js",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
+
   "private": true,
   "dependencies": {
     "@angular/animations": "^16.0.2",
@@ -26,7 +28,13 @@
     "ngx-bootstrap": "^10.1.1",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
-    "zone.js": "~0.13.0"
+    "zone.js": "~0.13.0",
+    "express": "^4.17.1",
+    "cors": "^2.8.5",
+    "body-parser": "^1.19.0",
+    "sequelize": "^6.6.5",
+    "pg": "^8.6.0",
+    "pg-hstore": "^2.3.4"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^16.0.2",
